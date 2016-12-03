@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Most for the Manifest file Screen Titles -->
+    <string name="app_name">Ring Escape</string>
+    <string name="highscores">High Scores</string>
+    <string name="new_game">New Game</string>
+    <string name="prefs">Settings</string>
+    <string name="connectionErrorTitle">No connection established!</string>
+    <string name="connectionErrorMessage">You need to be connected to the Internet to play Ring Escape!</string>
+    <string name="providerErrorTitle">GPS is disabled!</string>
+    <string name="providerErrorMessage">GPS must be enabled in your device settings to play Ring Escape!</string>
+    <string name="mockErrorTitle">Mock Locations disabled</string>
+    <string name="mockErrorMessage">Mock Locations must be enabled in your device settings if you want to play a virtual game!</string>
+    <string name="invalidIpMessage">Sorry, the IP address of the Server can only contain digits and dots (IPv4 style: xxx.xxx.xxx.xxx)</string>
+    <string name="appinfo">About Ring Escape</string>
+    <string name="appinfotext">	    Ring Escape is a location-based internet application, developed for the purposes of 
+	    my Bachelor Thesis at the Technological Educational Institute of Athens, supervised by
+	    Lecturer, Dr Ioannis Voyiatzis and Mr George Meletiou. Your location will be transmitted to a central server and 
+	    to other players only during the game. At the end of each game all location 
+	    data will be deleted. It is recommended that you turn off automatic switching of screen orientation 
+	    in your device settings to prevent unexpected behavior. Enjoy the app!\n\n Johny</string>
+    <string name="manual">Instructions</string>
+    <string name="your_name">You</string>
+    <string name="preferred_radius">Preferred radius</string>
+    <string name="others_found">Others found</string>
+    <string name="locservice">Location Service</string>
+    <string name="ringescape">Ring Escape</string>
+    <string name="player">PLAYER</string>
+    <string name="highscore">HIGH SCORE</string>
+	<string name="place">#</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.johny.ringescape.client"
+    android:versionCode="8"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewGame"
+            android:label="@string/new_game" 
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.NEWGAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HighScores"
+            android:label="@string/highscores" >
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.HIGHSCORES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RePreferences"
+            android:label="@string/prefs" >
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.REPREFERENCES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Instructions"
+            android:label="@string/manual" >
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.INSTRUCTIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppInfo"
+            android:label="@string/appinfo" >
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.APPINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RingEscape"
+            android:label="@string/ringescape"
+            android:theme="@style/Theme.Empty" 
+            android:configChanges="orientation" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="edu.johny.ringescape.client.RINGESCAPE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+              
+        <service
+            android:name=".LocationService"
+            android:exported="false"
+            android:label="@string/locservice"
+            android:configChanges="orientation"  >
+        </service>  
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_menu">
+        <item>New Game</item>
+        <item>High Scores</item>
+        <item>Settings</item>
+        <item>Instructions</item>
+        <item>About Ring Escape</item>
+    </string-array>
+    
+    <string-array name="radiuses_menu">
+        <item>1 km</item>
+        <item>2 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+    </string-array>
+    
+    <string-array name="radiuses_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    
+    <string-array name="drawable_radiuses_menu">
+        <item>8 px</item>
+        <item>10 px</item>
+        <item>12 px</item>
+        <item>14 px</item>
+        <item>16 px</item>
+    </string-array>
+    
+    <string-array name="drawable_radiuses_values">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+    
+   <string-array name="port_entries">
+        <item>80</item>
+        <item>8080</item>
+        <item>12345</item>
+    </string-array>
+
+</resources>

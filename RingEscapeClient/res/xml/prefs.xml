@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+        <EditTextPreference
+        android:defaultValue="You"
+        android:key="name"
+        android:summary="Enter your name"
+        android:title="Player name" />
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/radiuses_menu"
+        android:entryValues="@array/radiuses_values"
+        android:key="radius"
+        android:summary="Choose a radius to search for other players"
+        android:title="Radius" />
+    
+    <ListPreference
+        android:defaultValue="10"
+        android:entries="@array/drawable_radiuses_menu"
+        android:entryValues="@array/drawable_radiuses_values"
+        android:key="drawable_player_radius"
+        android:summary="Choose how big the players dots will look on the screen"
+        android:title="Drawable Player Radius" />
+
+    <EditTextPreference
+        android:defaultValue="192.168.1.2"
+        android:key="server_ip"
+        android:summary="The IP address of the Server"
+        android:title="Server IP" />
+
+    <ListPreference
+        android:defaultValue="80"
+        android:entries="@array/port_entries"
+        android:entryValues="@array/port_entries"
+        android:key="server_port"
+        android:summary="The port the Server listens to"
+        android:title="Server Port" />
+
+    <CheckBoxPreference
+        android:key="virtual"
+        android:summary="If on, you won&apos;t have to use GPS to play a game"
+        android:summaryOff="Real locations will be used in games"
+        android:summaryOn="Mock locations will be used in games"
+        android:title="Mock Locations" 
+        android:defaultValue="false"/>
+    
+    <CheckBoxPreference 
+        android:summaryOff="Your current location will be retrieved to search for other players" 
+        android:summaryOn="Your last known location will be used to search for other players" 
+        android:key="useLastKnownLocation" 
+        android:summary="If on, your last known location (possibly out of date) will be used to search for other players" 
+        android:title="Use last known location" 
+        android:defaultValue="false"/>
+
+</PreferenceScreen>
