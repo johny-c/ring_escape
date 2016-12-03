@@ -53,6 +53,7 @@ Thumbs.db
 *.kdeiv*
 *.project
 *.classpath
+.settings/
 
 # Binaries #
 ############
